@@ -6,6 +6,7 @@
  */
 /*global $:false */
 /*global window: false */
+
 (function() {
     "use strict";
     $(function($) {
@@ -19,13 +20,13 @@
         $('.halfwidth').css('width', vW / 2);
         $('.halfheight').css('height', vH / 2);
 
-        
+
         $('.eq-height1').setAllToMaxHeight();
         $('.eq-height2').setAllToMaxHeight();
         $('.eq-height3').setAllToMaxHeight();
         $('.eq-height4').setAllToMaxHeight();
         $('.news-head').setAllToMaxHeight();
-        
+
         //Mobile Only Navigation (multi level)
                 $('ul.slimmenu').slimmenu({
                     resizeWidth: '1200',
@@ -70,7 +71,7 @@
                 else{
                     $('.mastnav').slideUp();
                 }
-           }; 
+           };
         })( jQuery );
         $('.menu-notification a, .menu-close-notification a').on('click', function(){
             $().menuPanelTrigger();
@@ -94,7 +95,7 @@
                 else{
                     $('.works-filter-panel').slideUp();
                 }
-           }; 
+           };
         })( jQuery );
         $('.filter-notification a').on('click', function(){
             $().filterPanelTrigger();
@@ -117,12 +118,12 @@
         else{
             $('.filter-notification a').hide();
         }
-        
 
 
-        
+
+
 //ISOTOPE
-        
+
         //ISOTOPE GLOBALS
         var $container1 = $('.works-container');
 
@@ -184,8 +185,8 @@
     $('.venobox, .image-lightbox-link').venobox({
         numeratio: true,
         infinigall: true
-    });   
-        
+    });
+
 
 //CAROUSEL
  $(".project-carousel").owlCarousel({
@@ -209,7 +210,7 @@
 
 
  //PARALLAX
-        //Initialize Each Parallax Layer  
+        //Initialize Each Parallax Layer
         function parallaxInit() {
             $.stellar({
                 positionProperty: 'transform'
@@ -229,7 +230,7 @@
             //Dectivate Parallax effect if mobile device is detected (bg image is displayed)
             $('.parallax, .parallax-layer').addClass('no-parallax');
 
-        }   
+        }
 
     });
     // $(function ($)  : ends

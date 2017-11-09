@@ -2,11 +2,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
     .nav-bg {
-        background-image: url('../images/bg/about-bg-1920x1080.webp');
+        background-image: url('../images/bg/about-bg-1920x1080.png');
     }
 
     .about-bg {
-        background-image: url('../images/bg/about-bg-1920x1080.webp');
+        background-image: url('../images/bg/about-bg-1920x1080.png');
     }
 
     .about-bg-01 {
@@ -25,12 +25,8 @@
         background-image: url('../images/about/about-goals.jpg');
     }
 
-    .journal-bg {
-        background-image: url('../images/bg/about-stats-1500x1000.jpg');
-    }
-
     .contact-bg {
-        background-image: url('../images/bg/about-bg-1920x1080.webp');
+        background-image: url('../images/bg/about-bg-1920x1080.png');
     }
 
     .project-01-carousel-item-01 {
@@ -62,7 +58,7 @@
     }
 
     .parallax-showcase-02 {
-        background-image: url('../images/project/safeNav2-1200x700.png');
+        background-image: url('../images/project/project03/safeNav2-1200x700.png');
     }
 
     .parallax-showcase-03 {
