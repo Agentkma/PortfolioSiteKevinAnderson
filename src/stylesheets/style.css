@@ -1,0 +1,12 @@
+@import 'bootstrap.css';
+@import 'isotope.css';
+@import 'venobox.css';
+@import 'sinister.css';
+@import 'animatedheaders.css';
+@import 'slimmenu.css';
+@import 'main.css';
+@import 'main-bg.css';
+@import 'main-responsive.css';
+#contactMail {
+    background-color: black !important;
+}

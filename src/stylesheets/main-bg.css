@@ -1,0 +1,75 @@
+    /* MAIN-BG.CSS contains Background Image paths & definition rules powered by CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    .nav-bg {
+        background-image: url('../images/bg/about-bg-1920x1080.jpg');
+    }
+
+    .about-bg {
+        background-image: url('../images/bg/about-bg-1920x1080.jpg');
+    }
+
+    .about-bg-01 {
+        background-image: url('../images/about/about-grow.jpg');
+    }
+
+    .about-bg-02 {
+        background-image: url('../images/about/about-learn.jpg');
+    }
+
+    .about-bg-03 {
+        background-image: url('../images/about/about-story1.jpg');
+    }
+
+    .about-bg-04 {
+        background-image: url('../images/about/about-goals.jpg');
+    }
+
+
+    .contact-bg {
+        background-image: url('../images/bg/about-bg-1920x1080.jpg');
+    }
+
+    .project-01-carousel-item-01 {
+        background-image: url('../images/project/project01/gEats6-1200x700.png');
+    }
+
+    .project-01-carousel-item-02 {
+        background-image: url('../images/project/project01/gEats2-1200x700.png');
+    }
+
+    .project-01-carousel-item-03 {
+        background-image: url('../images/project/project01/gEats3-1200x700.png');
+    }
+
+    .project-05-carousel-item-01 {
+        background-image: url('../images/project/project05/KaptureAngularWeather-1200x700.gif');
+    }
+
+    .project-05-carousel-item-02 {
+        background-image: url('../images/project/project05/KaptureAngularJSInbox-1200x700.gif');
+    }
+
+    .project-05-carousel-item-03 {
+        background-image: url('../images/project/project05/KaptureAngularToDoList-1200x700.gif');
+    }
+
+    .parallax-showcase-01 {
+        background-image: url('../images/project/project03/safeNav1-1200x700.png');
+    }
+
+    .parallax-showcase-02 {
+        background-image: url('../images/project//project03/safeNav2-1200x700.png');
+    }
+
+    .parallax-showcase-03 {
+        background-image: url('../images/project/project03/safeNav3-800x600.png');
+    }
+
+    .call-to-action-bg {
+        background-image: url('../images/bg/about-interested-1600x1006.jpg');
+    }
+
+    .stats-bg {
+        background-image: url('../images/about/about-stats1.jpg');
+    }
