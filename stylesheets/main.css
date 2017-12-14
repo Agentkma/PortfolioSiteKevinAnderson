@@ -700,54 +700,63 @@ section.mastwrap.signature-karl {
     margin: 0 !important;
     padding: 0 !important;
     width: 33.3% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-two-third {
     margin: 0 !important;
     padding: 0 !important;
     width: 66.6% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-one-half {
     margin: 0 !important;
     padding: 0 !important;
     width: 50% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-one-fourth {
     margin: 0 !important;
     padding: 0 !important;
     width: 25% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-full-width {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-one-third-spaced {
     margin: 1% !important;
     padding: 0 !important;
     width: 31.3% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-one-half-spaced {
     margin: 1% !important;
     padding: 0 !important;
     width: 48% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-two-third-spaced {
     margin: 1% !important;
     padding: 0 !important;
     width: 64.6% !important;
+    min-height: 30rem;
 }
 
 .works-masonry-container .works-item-one-fourth-spaced {
     margin: 1% !important;
     padding: 0 !important;
     width: 23% !important;
+    min-height: 30rem;
 }
 
 

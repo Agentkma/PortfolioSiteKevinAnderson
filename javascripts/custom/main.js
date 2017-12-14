@@ -11,6 +11,8 @@
     "use strict";
     $(function($) {
 
+    
+
         //Detecting viewpot dimension
         var vH = $(window).height();
         var vW = $(window).width();
