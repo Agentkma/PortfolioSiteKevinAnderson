@@ -38,6 +38,7 @@
     <link rel="stylesheet/less" type="text/css" href="less/color.less">
     <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
     <script src="less/less.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 </head>
@@ -185,25 +186,25 @@
             <div class="container-fluid">
                 <div class="row" id="200grid">
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal1-1200x700.png"><img data-no-retina alt="macroPal homepage screen shot" title="home page" class="img-responsive" src="images/project/project02/macroPal1-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal1-1200x700.png"><img data-no-retina alt="macroPal homepage screen shot" title="home page" class="img-responsive lozad" data-src="images/project/project02/macroPal1-1200x700.png"/></a>
                     </article>
                     <!-- <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal2-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project02/macroPal2-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal2-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project02/macroPal2-1200x700.png"/></a>
                     </article> -->
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal3-1200x700.png"><img data-no-retina alt="macroPal build section screenshot" title="build section" class="img-responsive" src="images/project/project02/macroPal3-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal3-1200x700.png"><img data-no-retina alt="macroPal build section screenshot" title="build section" class="img-responsive lozad" data-src="images/project/project02/macroPal3-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal4-1200x700.png"><img data-no-retina alt="macropal choose food section" title="choose foods" class="img-responsive" src="images/project/project02/macroPal4-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal4-1200x700.png"><img data-no-retina alt="macropal choose food section" title="choose foods" class="img-responsive lozad" data-src="images/project/project02/macroPal4-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal5-1200x700.png"><img data-no-retina alt="macroPal Search Food Section" title="search food" class="img-responsive" src="images/project/project02/macroPal5-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal5-1200x700.png"><img data-no-retina alt="macroPal Search Food Section" title="search food" class="img-responsive lozad" data-src="images/project/project02/macroPal5-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal6-800x600.png"><img data-no-retina alt="macroPal mobile phone view" title="mobile view" class="img-responsive" src="images/project/project02/macroPal6-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal6-800x600.png"><img data-no-retina alt="macroPal mobile phone view" title="mobile view" class="img-responsive lozad" data-src="images/project/project02/macroPal6-800x600.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal7-800x600.png"><img data-no-retina alt="macroPal Tablet view" title="tablet view" class="img-responsive" src="images/project/project02/macroPal7-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project02/macroPal7-800x600.png"><img data-no-retina alt="macroPal Tablet view" title="tablet view" class="img-responsive lozad" data-src="images/project/project02/macroPal7-800x600.png"/></a>
                     </article>
                 </div>
             </div>
@@ -265,6 +266,10 @@
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+    </script>
     <script src="javascripts/libs/common.js"></script>
     <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>

@@ -30,20 +30,13 @@
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="stylesheets/styleContact.css">
-    <!-- <link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/elements.css">
-    <link rel="stylesheet" href="stylesheets/sinister.css">
-    <link rel="stylesheet" href="stylesheets/slimmenu.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/main-bg.css">
-    <link rel="stylesheet" href="stylesheets/main-responsive.css"> -->
-
     <!-- LESS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <link rel="stylesheet/less" type="text/css" href="less/color.less">
     <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
     <script src="less/less.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 </head>
@@ -259,6 +252,10 @@
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+    </script>
     <script src="javascripts/libs/common.js"></script>
     <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>

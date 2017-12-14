@@ -39,6 +39,7 @@
     <link rel="stylesheet/less" type="text/css" href="less/color.less">
     <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
     <script src="less/less.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 </head>
@@ -202,22 +203,22 @@
             <div class="container-fluid">
                 <div class="row" id="100grid">
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats6-1200x700.png"><img data-no-retina alt="galvanize eats landing page hero image screen shot" title="home page" class="img-responsive" src="images/project/project01/gEats6-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats6-1200x700.png"><img data-no-retina alt="galvanize eats landing page hero image screen shot" title="home page" class="img-responsive lozad" data-src="images/project/project01/gEats6-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats1-1200x700.png"><img data-no-retina alt="galvanize eats order form and shopping cart" title="order form & cart" class="img-responsive" src="images/project/project01/gEats1-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats1-1200x700.png"><img data-no-retina alt="galvanize eats order form and shopping cart" title="order form & cart" class="img-responsive lozad" data-src="images/project/project01/gEats1-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats2-1200x700.png"><img data-no-retina alt="order sent message screen shot" title="order sent message" class="img-responsive" src="images/project/project01/gEats2-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats2-1200x700.png"><img data-no-retina alt="order sent message screen shot" title="order sent message" class="img-responsive lozad" data-src="images/project/project01/gEats2-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats3-1200x700.png"><img data-no-retina alt="galvanize eats info boxes" title="info boxes" class="img-responsive" src="images/project/project01/gEats3-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats3-1200x700.png"><img data-no-retina alt="galvanize eats info boxes" title="info boxes" class="img-responsive lozad" data-src="images/project/project01/gEats3-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats4-1200x700.png"><img data-no-retina alt="galvanize eats mobile phone view" title="mobile phone view" class="img-responsive" src="images/project/project01/gEats4-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats4-1200x700.png"><img data-no-retina alt="galvanize eats mobile phone view" title="mobile phone view" class="img-responsive lozad" data-src="images/project/project01/gEats4-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats5-1200x700.png"><img data-no-retina alt="galvanize eats table view" title="tablet view" class="img-responsive" src="images/project/project01/gEats5-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery100" href="images/project/project01/gEats5-1200x700.png"><img data-no-retina alt="galvanize eats table view" title="tablet view" class="img-responsive lozad" data-src="images/project/project01/gEats5-1200x700.png"/></a>
                     </article>
                 </div>
             </div>
@@ -279,6 +280,10 @@
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+    </script>
     <script src="javascripts/libs/common.js"></script>
     <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>

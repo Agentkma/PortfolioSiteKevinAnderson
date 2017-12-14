@@ -30,15 +30,7 @@
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="stylesheets/styleProject.css">
-    <!-- <link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/elements.css">
-    <link rel="stylesheet" href="stylesheets/venobox.css">
-    <link rel="stylesheet" href="stylesheets/owl.carousel.css">
-    <link rel="stylesheet" href="stylesheets/sinister.css">
-    <link rel="stylesheet" href="stylesheets/slimmenu.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/main-bg.css">
-    <link rel="stylesheet" href="stylesheets/main-responsive.css"> -->
+
 
     <!-- LESS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,6 +38,7 @@
     <link rel="stylesheet/less" type="text/css" href="less/color.less">
     <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
     <script src="less/less.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 </head>
@@ -222,22 +215,22 @@
             <div class="container-fluid">
                 <div class="row" id="300grid">
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav1-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav1-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav1-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav1-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav2-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav2-1200x700.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav2-1200x700.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav2-1200x700.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav3-800x600.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav3-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav3-800x600.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav3-800x600.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav4-800x600.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav4-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav4-800x600.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav4-800x600.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav5-800x600.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav5-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav5-800x600.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav5-800x600.png"/></a>
                     </article>
                     <article class="col-md-6 text-left no-pad">
-                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav6-800x600.png"><img data-no-retina alt="" title="" class="img-responsive" src="images/project/project03/safeNav6-800x600.png"/></a>
+                        <a class="venobox" data-gall="portfolio-gallery" href="images/project/project03/safeNav6-800x600.png"><img data-no-retina alt="" title="" class="img-responsive lozad" data-src="images/project/project03/safeNav6-800x600.png"/></a>
                     </article>
                 </div>
             </div>
@@ -299,6 +292,10 @@
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+    </script>
     <script src="javascripts/libs/common.js"></script>
     <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>

@@ -30,13 +30,7 @@
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="stylesheets/styleAbout.css">
-    <!-- <link rel="stylesheet" href="stylesheets/bootstrap.css">
-    <link rel="stylesheet" href="stylesheets/elements.css">
-    <link rel="stylesheet" href="stylesheets/sinister.css">
-    <link rel="stylesheet" href="stylesheets/slimmenu.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="stylesheets/main-bg.css">
-    <link rel="stylesheet" href="stylesheets/main-responsive.css"> -->
+
 
     <!-- LESS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,6 +38,7 @@
     <link rel="stylesheet/less" type="text/css" href="less/color.less">
     <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
     <script src="less/less.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
 
 </head>
@@ -241,7 +236,7 @@
 
 
                         <article class="col-md-6 col-md-offset-3 team-block signature-karl">
-                            <img alt="profile pic of kevin anderson" title="profile pic" class="img-responsive" src="images/team/kevin.jpg" />
+                            <img alt="profile pic of kevin anderson" title="profile pic" class="img-responsive lozad" data-src="images/team/kevin.jpg" class="lozad"/>
                             <div class="team-info">
                                 <h4 class="white font3bold">Kevin Anderson</h4>
                                 <div class="liner-small color-bg"></div>
@@ -417,6 +412,10 @@
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+    </script>
     <script src="javascripts/libs/common.js"></script>
     <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/custom/main.js"></script>
