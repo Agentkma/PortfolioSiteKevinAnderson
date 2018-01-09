@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
+	devtool: 'inline-cheap-source-map',
 	entry: {
 		app: './src/index.js',
 		fourOfour: './src/404.js',
@@ -27,24 +28,26 @@ const config = {
 		rules: [
 			{
 				test: /\.css$/,
-				use: [
-					{
-						loader: 'style-loader' // creates style nodes from JS strings
-					},
-					{
-						loader: 'css-loader' // translates CSS into CommonJS
-					}],
-                test: /\.less$/,
-                use: [{
-                    loader: 'less-loader' // compiles Less to CSS
-                }]
-					
-				]
+				use: ['style-loader', 'css-loader'] // translates CSS into CommonJS
 			},
 			{
-				test: /\.(png|svg|jpg|gif|ttf|eot|woff|woff2)$/,
-				use: ['file-loader']
+				test: /\.js$/,
+				exclude: /(node_modules|bower_components)/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
+				}
 			}
+			// {
+			// 	test: /\.less$/,
+			// 	use: ['less-loader'] // compiles Less to CSS
+			// },
+			// {
+			// 	test: /\.(png|svg|jpg|jpeg|gif|ttf|eot|woff|woff2)$/,
+			// 	use: ['file-loader']
+			// }
 		]
 	},
 	plugins: [
@@ -52,7 +55,15 @@ const config = {
 		new webpack.optimize.CommonsChunkPlugin({
 			name: 'commons',
 			filename: 'commons.js',
+
 			children: true
+			// (use all children of the chunk)
+			//
+			// async: true,
+			// // (create an async commons chunk)
+			//
+			// minChunks: 3
+			// // (3 children must share the module before it's separated)
 		}),
 		new HtmlWebpackPlugin(),
 		new HtmlWebpackPlugin({
