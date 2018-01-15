@@ -1,16 +1,12 @@
-
-import _ from 'lodash';
 import './stylesheets/styleProject.css';
 
-  function component() {
-    var element = document.createElement('div');
+function findImages() {
+	Array.prototype.map.call(
+		document.querySelectorAll('img[require-src]'),
+		img => {
+			img.src = require(img['require-src']);
+		}
+	);
+}
 
-
-  // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    return element;
-  }
-
-  document.body.appendChild(component());
+window.onload = findImages;
